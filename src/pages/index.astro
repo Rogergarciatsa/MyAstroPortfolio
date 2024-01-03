@@ -6,7 +6,7 @@ import Header from '../components/Header.astro';
 
 <Layout title="Welcome to Astro.">
 <Fragment class="max-w-screen-xl mx-auto px-5">
-	<div class="max-w-screen-xl mx-auto mt-20 px-5">  <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"> <div class="py-6 md:order-1 hidden md:block"> <picture> <source srcset="../images/Roger.png 600w, ../images/Roger.png 400w, ../images/Roger.png 600w" type="image/webp" sizes="(max-width: 300px) 80vw, 200px"> <img src="../images/Roger.png" srcset="../images/Roger.png 200w, /../images/Roger.png 400w, ../images/Roger.png 600w" alt="Hey, I am Roger" sizes="(max-width: 800px) 100vw, 620px" loading="eager" width="220" height="424" decoding="async"> </picture> </div> <div> 
+	<div class="max-w-screen-xl mx-auto mt-20 px-5">  <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"> <div class="py-6 md:order-1 hidden md:block"> <picture> <source srcset="../../images/Roger.png 600w, ../../images/Roger.png 400w, ../../images/Roger.png 600w" type="image/webp" sizes="(max-width: 300px) 80vw, 200px"> <img src="../../images/Roger.png" srcset="../../images/Roger.png 200w, /../../images/Roger.png 400w, ../../images/Roger.png 600w" alt="Hey, I am Roger" sizes="(max-width: 800px) 100vw, 620px" loading="eager" width="220" height="424" decoding="async"> </picture> </div> <div> 
 		<h1 class="ml-[-.0155em] text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-800 dark:text-primary-500">
 		Hello!<br></h1> 
 		<h2 class="mt-[-.3em] mb-0 text-5xl tracking-[-.035em] font-thin lg:text-7xl text-primary-600 dark:text-primary-500">I am Roger<span class="text-sky-400">.</span>
@@ -16,10 +16,15 @@ import Header from '../components/Header.astro';
 		</p> 
 		<div class="mt-6 flex flex-col sm:flex-row gap-3"> 
 			<a href="https://www.linkedin.com/in/roger-garcia-pages/" target="_blank" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-[#0e76a8] text-white hover:bg-gray-800  border-2 border-transparent flex gap-1 items-center justify-center"> <svg viewBox="0 0 24 24" class="text-white w-5 h-5" astro-icon="bx:bxs-cloud-download"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd"/></svg>
-		My LinkedIn
-		</a> <a href="https://github.com/Rogergarciatsa" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black  flex gap-1 items-center justify-center"> <svg viewBox="0 0 24 24" class="text-black w-4 h-4" astro-icon="bx:bxl-github"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd"/></svg>
+		My LinkedIn</a> 
+		
+		<a href="https://github.com/Rogergarciatsa" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black  flex gap-1 items-center justify-center"> <svg viewBox="0 0 24 24" class="text-black w-4 h-4" astro-icon="bx:bxl-github"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd"/></svg>
 		My GitHub Repo
-		</a> </div> </div> </main> <div class="mt-16 md:mt-0"> <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+		</a> 
+	</div> 
+</div> 
+</main> 
+<div class="mt-16 md:mt-0"> <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
 		Everything you need to start a website
 		</h2> <p class="text-lg mt-4 text-white-600">
 		Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.
