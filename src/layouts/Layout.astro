@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-
+import tailwind from '@astrojs/tailwind';
 const { title } = Astro.props;
 ---
 
@@ -36,6 +36,7 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
+		color-scheme: dark light;
 	}
 	code {
 		font-family:
